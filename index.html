@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <div class="snow" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <main class="portfolio-card">
+        <section class="hero">
+            <div class="hero-left">
+                <div class="top-row">
+                    <h2 class="brand">MyPortfolio.</h2>
+                    <nav class="nav">
+                        <a class="active" href="#top">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+
+                <p class="intro-small">Hello, It's Me</p>
+                <h1 class="name">John Dominic</h1>
+                <h3 class="role">And I'm a <span class="accent">Web Developer</span></h3>
+
+                <p class="description">
+                    "I build custom web systems for student projects and small businesses using PHP and MySQL."
+                </p>
+
+                <div class="socials">
+                    <a href="https://www.facebook.com/share/1JtaD3w8r8/" aria-label="Facebook" onclick="openSocial('facebook', event)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M13.5 21v-7h2.4l.4-3h-2.8V9.2c0-.9.3-1.5 1.6-1.5H16V5.1c-.2 0-1.1-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.9V11H8v3h2v7h3.5z"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/esmajd_04" aria-label="Telegram" onclick="openSocial('telegram', event)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.7 4.3 3.8 10.8c-1.1.4-1.1 2 0 2.4l4.3 1.4 1.6 5.1c.3 1 1.5 1.3 2.2.6l2.4-2.3 4.7 3.5c.8.6 2 .1 2.2-.9l2.9-14c.2-1.1-.9-2-2-1.6zm-9.3 10.7-.4 3-1.1-3.5 7.8-6.9-6.3 7.4z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/639922281433" aria-label="WhatsApp" onclick="openSocial('whatsapp', event)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 3.9A10 10 0 0 0 4.1 16.1L3 21l5-1.1A10 10 0 1 0 20 3.9zm-8 16.5a8.4 8.4 0 0 1-4.3-1.2l-.3-.2-2.9.6.6-2.8-.2-.3a8.4 8.4 0 1 1 7.1 3.9zm4.6-6.2c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.5.6c-.2.2-.3.2-.6.1-1.6-.8-2.6-2.3-2.8-2.6-.2-.3 0-.4.1-.6l.4-.5c.1-.1.1-.3.2-.4.1-.1.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.5.1.2 1.8 2.8 4.5 3.9.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/john-dominic-esma-9824b13a8/" aria-label="LinkedIn" onclick="openSocial('linkedin', event)">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M6.4 8.5a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zM4.8 9.9H8V20H4.8V9.9zm5.1 0H13v1.4h.1c.4-.8 1.4-1.7 2.9-1.7 3.1 0 3.7 2.1 3.7 4.7V20h-3.2v-5c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V20H9.9V9.9z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <a class="btn" href="Updated CV John Dominic Esma.pdf" onclick="downloadCV(event)">Download CV</a>
+            </div>
+
+            <div class="hex-wrap">
+                <div class="hex-image">
+                    <img src="mypic.jpg" alt="My profile photo">
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="hex-wrap">
+                <div class="hex-image">
+                    <img src="mypic.jpg" alt="My profile photo">
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h2 class="about-title">About <span>Me</span></h2>
+                <h3 class="about-subtitle">Web Developer!</h3>
+                <ul class="about-description">
+                    <li>I am a dedicated Web Developer skilled in PHP, MySQL, HTML, CSS, and JavaScript, focused on building functional and user-friendly systems.</li>
+                    <li>I have developed websites and system solutions for students, especially for IT capstone and thesis projects, turning their ideas into working applications.</li>
+                    <li>I also gained professional experience as a Registration Kit Operator, Team Supervisor, and Consumer Relations Facilitator, strengthening my attention to detail, communication, and problem-solving skills.</li>
+                </ul>
+                <a class="btn" href="#services">Read More</a>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="services-header">
+                <h2 class="services-title">Services <span>I Offer</span></h2>
+                <p class="services-intro">
+                    Practical, student-friendly, and business-ready solutions focused on system development and long-term usability.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications using PHP, MySQL, HTML, CSS, and JavaScript.</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Capstone & Thesis System Development</h3>
+                    <p>Design and develop complete systems for IT students, including documentation support and system features.</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Database Design & Management</h3>
+                    <p>Create and manage structured databases with MySQL for efficient data storage and retrieval.</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Front-End Design</h3>
+                    <p>Build responsive and user-friendly interfaces with clean and modern designs.</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>System Maintenance & Bug Fixing</h3>
+                    <p>Fix errors, improve performance, and update existing systems or websites.</p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Data Entry & System Support</h3>
+                    <p>Provide accurate data entry and technical support based on real work experience.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="portfolio">
+            <div class="portfolio-header">
+                <h2 class="portfolio-title">Projects <span>/ Portfolio</span></h2>
+                <p class="portfolio-intro">
+                    Selected systems and websites I built with focus on usability, clean design, and reliable functionality.
+                </p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3 class="project-name">Capstone Management System</h3>
+                    <p class="project-desc">
+                        A web-based platform for handling capstone records, submissions, and project tracking for students and advisers.
+                    </p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="screenshot-frame">
+                        <img src="Screenshot 2026-02-19 185924.png" alt="Capstone Management System Screenshot">
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-name">Document Management System</h3>
+                    <p class="project-desc">
+                        A document workflow solution for organizing memorandums, records, and transactions with a dashboard overview.
+                    </p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+                    </div>
+                    <div class="screenshot-frame">
+                        <img src="Screenshot 2026-02-19 185940.png" alt="Document Management System Screenshot">
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-name">Whitepace Landing Page</h3>
+                    <p class="project-desc">
+                        A responsive front-end website design showcasing product information, pricing, testimonials, and call-to-action sections.
+                    </p>
+                    <div class="project-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+                    </div>
+                    <div class="screenshot-frame">
+                        <img src="Screenshot 2026-02-19 190127.png" alt="Whitepace Landing Page Screenshot">
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-name">Registration Kit Operator - PhilSys</h3>
+                    <p class="project-desc">
+                        Assisted citizens during national ID registration by operating enrollment kits, verifying details, and ensuring accurate data capture.
+                    </p>
+                    <div class="project-tech">
+                        <span>Field Operations</span><span>Data Capture</span><span>PhilSys</span>
+                    </div>
+                    <div class="screenshot-frame">
+                        <img src="registration kit operator.jpg" alt="Registration Kit Operator in PhilSys">
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-name">Team Supervisor - POPCEN-CBMS (PSA)</h3>
+                    <p class="project-desc">
+                        Supervised enumerators, monitored daily targets, and ensured quality and completeness of collected census and community-based monitoring data.
+                    </p>
+                    <div class="project-tech">
+                        <span>Leadership</span><span>PSA</span><span>Data Validation</span>
+                    </div>
+                    <div class="screenshot-frame">
+                        <img src="Team supervisor.jpg" alt="Team Supervisor in POPCEN-CBMS at PSA">
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-name">Consumer Facilitator - ANECO</h3>
+                    <p class="project-desc">
+                        Supported consumer concerns and service inquiries, coordinated front-line assistance, and helped improve customer communication workflows.
+                    </p>
+                    <div class="project-tech">
+                        <span>Customer Service</span><span>ANECO</span><span>Communication</span>
+                    </div>
+                    <div class="screenshot-frame">
+                        <img src="Consumer Facilitator.jpg" alt="Consumer Facilitator in Agusan del Norte Electric Cooperative">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <div class="skills-header">
+                <h2 class="skills-title">Skills <span>Overview</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>PHP</h3>
+                    <div class="skill-stars" aria-label="PHP rating 4 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star">&#9734;</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>MySQL</h3>
+                    <div class="skill-stars" aria-label="MySQL rating 4 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star">&#9734;</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>JavaScript</h3>
+                    <div class="skill-stars" aria-label="JavaScript rating 4 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star">&#9734;</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>HTML/CSS</h3>
+                    <div class="skill-stars" aria-label="HTML/CSS rating 5 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Attention to Detail</h3>
+                    <div class="skill-stars" aria-label="Attention to Detail rating 5 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Communication</h3>
+                    <div class="skill-stars" aria-label="Communication rating 4 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star">&#9734;</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Data Entry</h3>
+                    <div class="skill-stars" aria-label="Data Entry rating 4 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star">&#9734;</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Problem-Solving</h3>
+                    <div class="skill-stars" aria-label="Problem-Solving rating 4 out of 5">
+                        <span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star filled">&#9733;</span><span class="star">&#9734;</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-header">
+                <h2 class="contact-title">Contact <span>Me</span></h2>
+                <p class="contact-intro">Open for freelance work, project collaborations, and full-time opportunities.</p>
+            </div>
+
+            <div class="contact-grid">
+                <article class="contact-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:esmajohndominic@gmail.com">esmajohndominic@gmail.com</a></p>
+                </article>
+
+                <article class="contact-card">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+639922281433">+63 912 429 9602</a></p>
+                </article>
+
+                <article class="contact-card">
+                    <h3>Facebook</h3>
+                    <p><a href="https://www.facebook.com/share/1JtaD3w8r8/" target="_blank" rel="noopener noreferrer">facebook.com/john.dominic</a></p>
+                </article>
+
+                <article class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/john-dominic-esma-9824b13a8/" target="_blank" rel="noopener noreferrer">linkedin.com/in/john-dominic-esma-9824b13a8</a></p>
+                </article>
+            </div>
+
+            <a class="btn hire-btn" href="mailto:esmajohndominic@gmail.com?subject=Hiring%20Inquiry&body=Hi%20John%20Dominic,%20I%20would%20like%20to%20discuss%20a%20project%20with%20you.">Hire Me</a>
+        </section>
+    </main>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".about, .services-section, .portfolio-section, .skills-section, .contact-section");
+        sections.forEach((section) => section.classList.add("fade-init"));
+
+        if (!("IntersectionObserver" in window)) {
+            sections.forEach((section) => section.classList.add("in-view"));
+            return;
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("in-view");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.14 }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+    });
+
+    function openSocial(platform, event) {
+        event.preventDefault();
+
+        const socialLinks = {
+            facebook: "https://www.facebook.com/share/1JtaD3w8r8/",
+            telegram: "https://t.me/esmajd_04",
+            whatsapp: "https://wa.me/639922281433",
+            linkedin: "https://www.linkedin.com/in/john-dominic-esma-9824b13a8/"
+        };
+
+        const url = socialLinks[platform];
+        if (url) {
+            window.open(url, "_blank", "noopener,noreferrer");
+        }
+    }
+
+    function downloadCV(event) {
+        event.preventDefault();
+
+        const cvPath = "Updated CV John Dominic Esma.pdf";
+        const link = document.createElement("a");
+        link.href = cvPath;
+        link.download = "John-Dominic-Esma-CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
+</body>
+</html>
